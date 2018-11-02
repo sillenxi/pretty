@@ -8,6 +8,7 @@ body{
 	background-color: #fff;
 	display: flex;
 	align-items: center;
+	z-index: 9999;
 }
 
 
@@ -28,6 +29,8 @@ ul{
 	list-style-type: none;
 	margin: 0 100px;
 	padding: 0;
+	position: fixed;
+	top: 0;
 	
 }
 
@@ -86,7 +89,7 @@ li a:hover, .stories:hover{
 
 #banner{
 	position: absolute;
-	z-index: 9px;
+	z-index: 9;
 	width: calc(1920px * 3);
 }
 
@@ -106,9 +109,14 @@ li a:hover, .stories:hover{
 
 .num{
 	position: absolute;
-	z-index: 10px;
+	z-index: 10;
 	border-radius: 50%;
 	background-color:#333;
+	width: 16px;
+	height:16px;
+	display: inline-block;
+	right: 100px;
+	top: 550px;
 }
 
 .num:hover{background:#00f;}  
