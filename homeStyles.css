@@ -76,3 +76,49 @@ li a:hover, .stories:hover{
 .stories:hover .storiesMenu{
 	display: block;
 }
+
+#banners{
+	position: absolute;
+	width: 1920px;
+	height: 500px;
+	overflow: hidden;
+}
+
+#banner{
+	position: absolute;
+	z-index: 9px;
+	width: calc(1920px * 3);
+}
+
+.play{
+	animation: rotation 10s ease infinite;
+}
+
+@keyframes rotation{
+	0%  {        margin-left: 0px;         } 
+	23% {        margin-left: 0px;         }
+	33% {       margin-left: -1920px;     } 
+	56% {       margin-left: -1920px;     } 
+	66% {       margin-left: -3840px;     }
+	90% {       margin-left: -3840px;     }
+	100% {       margin-left: 0px;     }
+}
+
+.num{
+	position: absolute;
+	z-index: 10px;
+	border-radius: 50%;
+	background-color:#333;
+}
+
+.num:hover{background:#00f;}  
+        .num:hover,#banner:hover{animation-play-state:paused;}  
+        .num:nth-child(2){margin-right:30px}  
+        .num:nth-child(3){margin-right:60px} 
+        #a1:hover ~ #photos{animation: rotation1 .5s ease-out forwards;}  
+        #a2:hover ~ #photos{animation: rotation2 .5s ease-out forwards;}  
+        #a3:hover ~ #photos{animation: rotation3 .5s ease-out forwards;}  
+        @keyframes rotation1 {0%{margin-left:-3840px;}100%{margin-left:-0px;} }  
+        @keyframes mrotation2 {0%{margin-left:-3840px;}100%{margin-left:-1920px;}   }  
+        @keyframes rotation3 {100%{margin-left:-1920px;}   }  
+        
