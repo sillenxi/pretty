@@ -1,15 +1,19 @@
 body{
 	background-color: #f6f6f6;
 	font-family: "Source Han Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
 }
-
 
 .header{
 	background-color: #fff;
 	display: flex;
 	align-items: center;
 }
-
+.logo{
+	display: flex;
+	align-items: center;
+}
 
 .nav{
     width: 1180px;
@@ -19,31 +23,23 @@ body{
 	font-size: 16px;
 }
 
-.logo{
-	display: flex;
-	align-items: center;
-}
-
-ul{
+ul {
 	list-style-type: none;
 	margin: 0 100px;
 	padding: 0;
-	overflow: hidden;
 }
-
-li{
+li {
 	float: left;
+	box-sizing: border-box;
 }
-
-li a, .storiesBtn {
+li a {
 	display: block;
 	padding: 28px;
 	color: #333;
 	text-decoration: none;
 }
-
-li a:hover, .stories:hover{
-	box-shadow: 0px 0px 4px #ccc;
+li:hover {
+	box-shadow: 0 0 4px #ccc;
 	border-top: 4px solid #8293ff;
 }
 
@@ -55,7 +51,7 @@ li a:hover, .stories:hover{
 	display: none;
 	position: absolute;
 	background-color: #fff;
-    box-shadow:0px 8px 16px 0px #ccc;
+    box-shadow:0 8px 16px 0 #ccc;
 }
 
 .storiesMenu a{
