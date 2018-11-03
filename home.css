@@ -71,32 +71,29 @@ li:hover {
 }
 
 #banners{
-	position: absolute;
-	width: 1920px;
-	height: 500px;
+	position: relative;
+	width: 100vw;
+	height: calc(100vw * (500 / 1920));
 	overflow: hidden;
 }
-
 #banner{
 	position: absolute;
 	z-index: 9;
-	width: calc(1920px * 3);
+	width: calc(100vw * 3);
 }
-
+#banner img {
+	width: 100vw;
+	float: left;
+}
 .play{
 	animation: rotation 10s ease infinite;
 }
-
 @keyframes rotation{
-	0%  {        margin-left: 0px;         } 
-	23% {        margin-left: 0px;         }
-	33% {       margin-left: -1920px;     } 
-	56% {       margin-left: -1920px;     } 
-	66% {       margin-left: -3840px;     }
-	90% {       margin-left: -3840px;     }
-	100% {       margin-left: 0px;     }
+	0%, 23% { margin-left: 0px; } 
+	33%, 56% { margin-left: -100vw; } 
+	66%, 89% { margin-left: calc(-100vw * 2); }
+	100% { margin-left: 0px; }
 }
-
 .num{
 	position: absolute;
 	z-index: 10;
@@ -105,18 +102,39 @@ li:hover {
 	width: 16px;
 	height:16px;
 	display: inline-block;
-	right: 100px;
-	top: 550px;
+	right: 20px;
+	bottom: 10px;
 }
-
-.num:hover{background:#00f;}  
-        .num:hover,#banner:hover{animation-play-state:paused;}  
-        .num:nth-child(2){margin-right:30px}  
-        .num:nth-child(3){margin-right:60px} 
-        #a1:hover ~ #photos{animation: rotation1 .5s ease-out forwards;}  
-        #a2:hover ~ #photos{animation: rotation2 .5s ease-out forwards;}  
-        #a3:hover ~ #photos{animation: rotation3 .5s ease-out forwards;}  
-        @keyframes rotation1 {0%{margin-left:-3840px;}100%{margin-left:-0px;} }  
-        @keyframes mrotation2 {0%{margin-left:-3840px;}100%{margin-left:-1920px;}   }  
-        @keyframes rotation3 {100%{margin-left:-1920px;}   }  
+.num:nth-child(2) {
+	margin-right: 30px;
+}  
+.num:nth-child(3) {
+	margin-right: 60px;
+}
+.num:hover{
+	background:#00f;
+}  
+.num:hover, #banner:hover {
+	animation-play-state: paused;
+}  
+#a1:hover ~ #photos{
+	animation: rotation1 .5s ease-out forwards;
+}  
+#a2:hover ~ #photos{
+	animation: rotation2 .5s ease-out forwards;
+}  
+#a3:hover ~ #photos{
+	animation: rotation3 .5s ease-out forwards;
+}  
+@keyframes rotation1 {
+	0% { margin-left: calc(-100vw * 2); }
+	100% { margin-left: 0px; }
+}  
+@keyframes mrotation2 {
+	0% { margin-left: calc(-100vw * 2); }
+	100% { margin-left: -100vw; }
+}  
+@keyframes rotation3 {
+	100% { margin-left: -100vw; }
+}  
         
