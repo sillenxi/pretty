@@ -83,40 +83,9 @@ li:hover {
 	float: left;
 }
 
-.list{
-	width: 220px;
+img{
 	margin-right: 20px;
 	margin-bottom: 20px;
 	background-color: #fff;
-	padding: 40px 30px;
 	border-radius: 4px;	
-}
-
-.img{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.title{
-	font-size: 20px;
-	color: #333;
-	margin: 20px 0px;
-}
-
-.line{
-	width: 40px;
-	border-bottom: 4px solid #666;
-}
-
-.txt-con{
-	font-size: 16px;
-	color: #999;
-	line-height: 28px;
-	text-align: justify;
-	overflow: hidden;
-  	text-overflow: ellipsis;
-  	display: -webkit-box;
-  	-webkit-line-clamp: 5;
-  	-webkit-box-orient: vertical;
 }
