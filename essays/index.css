@@ -1,9 +1,12 @@
+/****** global *******/
 body{
 	background-color: #f6f6f6;
 	font-family: "PingFang SC","Lantinghei SC","Microsoft YaHei","HanHei SC","Helvetica Neue","Open Sans",Arial,"Hiragino Sans GB","微软雅黑",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif;
+	margin: 0;
 	padding: 0;
 }
 
+/***** 导航栏 ********/
 .header{
 	background-color: #fff;
 	display: flex;
@@ -31,11 +34,12 @@ li {
 	float: left;
 	box-sizing: border-box;
 }
-li a {
+li a, li > div:first-child {
 	display: block;
 	padding: 28px;
 	color: #333;
 	text-decoration: none;
+	cursor: pointer;
 }
 li:hover {
 	box-shadow: 0 0 4px #ccc;
@@ -69,6 +73,7 @@ li:hover {
 	display: block;
 }
 
+/****************************/
 .content{
 	width: 1180px;
 	margin: 32px auto;
@@ -83,13 +88,18 @@ li:hover {
 	float: left;
 }
 
-.list{
+.list {
 	width: 220px;
 	margin-right: 20px;
 	margin-bottom: 20px;
 	background-color: #fff;
 	padding: 40px 30px;
-	border-radius: 4px;	
+	border-radius: 4px;
+	cursor: pointer;
+	transition: box-shadow 1.2s ease 0s;
+}
+.list:hover {
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
 }
 
 .img{

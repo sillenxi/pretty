@@ -1,0 +1,16 @@
+{
+  "name": "pretty-girl",
+  "version": "0.0.1",
+  "description": "I love you!",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": "https://gitee.com/sillenxi/pretty-girl.git",
+  "author": "Sillen",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.6.1"
+  }
+}

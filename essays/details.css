@@ -1,9 +1,12 @@
+/****** global *******/
 body{
 	background-color: #f6f6f6;
 	font-family: "PingFang SC","Lantinghei SC","Microsoft YaHei","HanHei SC","Helvetica Neue","Open Sans",Arial,"Hiragino Sans GB","微软雅黑",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif;
+	margin: 0;
 	padding: 0;
 }
 
+/***** 导航栏 ********/
 .header{
 	background-color: #fff;
 	display: flex;
@@ -31,11 +34,12 @@ li {
 	float: left;
 	box-sizing: border-box;
 }
-li a {
+li a, li > div:first-child {
 	display: block;
 	padding: 28px;
 	color: #333;
 	text-decoration: none;
+	cursor: pointer;
 }
 li:hover {
 	box-shadow: 0 0 4px #ccc;
@@ -69,23 +73,39 @@ li:hover {
 	display: block;
 }
 
+/**************************/
 .content{
 	width: 1180px;
-	margin: 32px auto;
-}
-
-.list-box{
-	margin-right: -20px;
-}
-
-.con-box{
-	width: 300px;
-	float: left;
-}
-
-img{
-	margin-right: 20px;
-	margin-bottom: 20px;
 	background-color: #fff;
-	border-radius: 4px;	
+	padding: 40px 100px;
+	margin: 32px auto;
+	align-items: center;
+}
+
+.title{
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+}
+
+.info{
+	font-size: 14px;
+	color: #999;
+	padding-bottom: 20px;
+}
+
+.author{
+	margin-right: 32px;
+}
+
+.line{
+	border-bottom: 1px solid #ececec;
+	margin: 0 -40px;
+}
+
+.txt-con{
+	font-size: 16px;
+	color: #666;
+	line-height: 32px;
+	margin: 20 auto;
 }

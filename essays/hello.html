@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="/images/logo.png">
+	<title>思君|阔爱妹纸的开篇之作</title>
+	<meta charset="utf-8">
+	<meta name="description" content="阔爱妹纸的开篇之作">
+	<link rel="stylesheet" type="text/css" href="./details.css">
+	<style>
+		.colorful {
+			-webkit-mask-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, purple);
+			mask-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, purple);
+			background-image: linear-gradient(to right, red, orange, yellow, green, yellow, orange, red, orange, yellow, green, yellow, orange, red);
+            -webkit-background-clip: text;
+            background-clip: text;
+			-webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            animation: bganimate 5s infinite linear;
+            font-size: 30px;
+		}
+		@keyframes bganimate {
+            0% {
+                background-position: 0 0,
+            }
+            100% {
+                background-position: -100% 100%;
+            }
+		}
+		.marquee-wrapper {
+			overflow: hidden;
+			position: relative;
+		}
+		.marquee {
+			display: inline-block;
+			width: 100%;
+			white-space: nowrap;
+			animation: marquee 8s linear infinite;
+		}
+		@keyframes marquee{
+			0% {
+				transform: translateX(-10%)
+			}
+			100% {
+				transform: translateX(100%)
+			}
+		}
+		.barrage-wrapper {
+			width: 100%;
+			height: 180px;
+			overflow: hidden;
+			position: relative;
+		}
+		.barrage-wrapper .barrage {
+			white-space: nowrap;
+			position: absolute;
+			animation: barrage 8s linear infinite;
+		}
+		@keyframes barrage {
+			0% {
+				left: 100%;
+				transform: translate3d(0, 0, 0);
+			}
+			100% {
+				left: 0;
+				transform: translate3d(-100%, 0, 0)
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="nav">
+			<div class="logo">
+				<a href="/"><img src="/images/logo.png" width="60px" height="60px" alt="logo"></a>
+			</div>
+			<ul class="nav-hd">
+				<li><a href="/">首页</a></li>
+				<li class="stories">
+					<div>二三事</div>
+					<div class="storiesMenu">
+						<a href="./">闲情记趣</a>
+						<a href="#">坎坷记愁</a>
+						<a href="#">浪游记快</a>
+					</div>
+				</li>
+				<li><a href="/atlas">陌上玉</a></li>
+				<li><a href="">与君语</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="title">阔爱妹纸的开篇之作</div><br>
+		<div class="info">
+			<span class="author">Honye</span>
+			<span class="time">2018.11.13</span>
+		</div>
+		<div class="line"></div>
+		<div class="story">
+			<p>笨蛋汉纸竟然说窝不聪明阔爱，窝笨蛋嘛？算了，不反驳了 😕 但我哪里不阔爱了，明明这么阔爱，辣么也阔爱 😕 </p>
+			<p>好了，下面就是我要说的了：</p>
+			<marquee direction='right' scrollamount='8' behavior='alternate'>
+				<span class="colorful">我爱你！</span>
+			</marquee>
+			<marquee behavior="alternate" scrollamount='8'>
+				<span class="colorful">I love you!</span>
+			</marquee>
+			<div class="marquee-wrapper">
+				<b class="marquee marquee-left colorful">사랑해（요）!</b>
+			</div>
+			<div class="barrage-wrapper">
+				<b class="barrage colorful">爱してる!</b>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
