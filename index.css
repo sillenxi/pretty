@@ -42,8 +42,7 @@ li a, li > div:first-child {
 	cursor: pointer;
 }
 li:hover {
-	box-shadow: 0 0 4px #ccc;
-	border-top: 4px solid #8293ff;
+	box-shadow: 0 0 4px #ccc, 0 4px 0 0 inset #8293ff;
 }
 
 .stories{
