@@ -156,10 +156,14 @@ img{
 
 .dec-box{
 	border: 1px solid #fff;
+	padding: 16px;
+}
+
+.dec-wrap{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 16px;
+	overflow: hidden;
 }
 
 .dec-title{
@@ -174,6 +178,11 @@ img{
 }
 
 .dec-con{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.dec-p{
 	font-size: 14px;
 	overflow: hidden;
 	text-overflow:ellipsis; 
