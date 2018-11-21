@@ -143,6 +143,11 @@ li:hover {
 }
 
 .dec-con{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.dec-p{
 	font-size: 14px;
 	overflow: hidden;
 	text-overflow: ellipsis; 
