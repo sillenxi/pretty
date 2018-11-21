@@ -78,95 +78,64 @@ li:hover {
 	margin: 32px auto;
 }
 
-.list-box{
-	
-}
-
-.con-box{
-	max-width: 280px;
-	max-height: 200px;
+.mask-box {
+	position: relative;
+	width: 280px;
+	height: 200px;
 	float: left;
 	margin-right: 20px;
-	border-radius: 4px;	
+	border-radius: 4px;
 	overflow: hidden;
-
 }
-
-.con-box:nth-child(4n+4){
+.mask-box:nth-child(4n+4) {
 	margin-right: 0;
 }
 
-.mask-box{
-	position: relative;
-}
-
-.mask-img{
-	width: auto;
-	max-height:100%;
+.mask-img {
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 }
-
-
-img{
-	width: auto;
-	max-height:100%;
+.mask-img img {
+	width: 100%;
+	height: 100%;
 	display: block;
 }
 
-.mask{
-	padding: 0;
+.mask {
 	position: absolute;
-	text-align: center;
-	width: 100%;
-	top: 0;
-	bottom: 0;
-	display: table-cell;
-	vertical-align: middle;
-	overflow: hidden;
-}
-
-.mask .mask-title{
-	display: table;
-	font-size: 110%;
-	height: 100%;
-	text-transform: uppercase;
-	width: 100%;
-	margin:0;
-}
-
-.mask-con{
-	display: table-cell;
-	position: relative;
-	transition: opacity .25s ease-in-out, background .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out, background .25s ease-in-out;
-	-webkit-transition: opacity .25s ease-in-out, background .25s ease-in-out;
-	vertical-align: middle;
 	z-index: 1;
-	color: #fff;
-	text-decoration: none;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 	opacity: 0;
-	padding: 20%;
+	padding: 18%;
+	box-sizing: border-box;
+	-webkit-transition: opacity .25s ease-in-out, background .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out, background .25s ease-in-out;
+	transition: opacity .25s ease-in-out, background .25s ease-in-out;
 }
-
-.mask-con:hover{
+.mask:hover {
 	opacity: 1;
-	color: #fff;
-	background: rgba(0,0,0,.3);
+	background: rgba(0,0,0,.5);
 }
 
 .dec-box{
 	border: 1px solid #fff;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	color: #fff;
+	text-align: center;
 	padding: 16px;
+	overflow: hidden;
 }
 
-.dec-title{
+.dec-title {
 	font-size: 18px;
 }
 
-.line{
+.line {
+	display: inline-block;
 	width: 50%;
 	height: 1px;
 	background-color: #fff;
@@ -176,6 +145,15 @@ img{
 .dec-con{
 	font-size: 14px;
 	overflow: hidden;
-	text-overflow:ellipsis; 
-	white-space:nowrap;
+	text-overflow: ellipsis; 
+	white-space: nowrap;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after {
+	clear: both;
 }
