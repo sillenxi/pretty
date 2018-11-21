@@ -84,6 +84,7 @@ li:hover {
 	height: 200px;
 	float: left;
 	margin-right: 20px;
+	margin-bottom: 20px;
 	border-radius: 4px;
 	overflow: hidden;
 }
@@ -133,6 +134,9 @@ li:hover {
 	padding: 16px;
 	box-sizing: border-box;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .dec-box > div {
 	max-height: 100%;
@@ -159,7 +163,7 @@ li:hover {
 	word-break: break-all;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
+	-webkit-line-clamp: 1;
 }
 
 .clearfix:before,
