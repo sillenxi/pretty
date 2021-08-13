@@ -74,7 +74,7 @@ li:hover {
 
 /**************************/
 .content{
-	width: 1180px;
+	max-width: 1180px;
 	background-color: #fff;
 	padding: 40px 100px;
 	margin: 32px auto;

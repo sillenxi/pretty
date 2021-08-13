@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="../images/logo.png">
+	<title>思君|阔爱妹纸的开篇之作</title>
+	<meta charset="utf-8">
+	<meta name="description" content="阔爱妹纸的开篇之作">
+	<link rel="stylesheet" type="text/css" href="./details.css">
+	<style>
+		.colorful {
+			-webkit-mask-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, purple);
+			mask-image: linear-gradient(to right, red, orange, yellow, green, cyan, blue, purple);
+			background-image: linear-gradient(to right, red, orange, yellow, green, yellow, orange, red, orange, yellow, green, yellow, orange, red);
+            -webkit-background-clip: text;
+            background-clip: text;
+			-webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            animation: bganimate 5s infinite linear;
+            font-size: 30px;
+		}
+		@keyframes bganimate {
+            0% {
+                background-position: 0 0,
+            }
+            100% {
+                background-position: -100% 100%;
+            }
+		}
+		.barrage-wrapper {
+			width: 100%;
+			height: 120px;
+			overflow: hidden;
+			position: relative;
+		}
+		.barrage-wrapper .barrage {
+			white-space: nowrap;
+			position: absolute;
+			animation: barrage 8s linear infinite, bganimate 5s infinite linear;
+		}
+    @keyframes barrage {
+      0% {
+        left: 0;
+        transform: translate3d(0, 0, 0);
+      }
+      50% {
+        left: 100%;
+        transform: translate3d(-100%, 0, 0);
+      }
+      100% {
+        left: 0;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    .hiding {
+      color: rgba(224, 228, 230, 0.5);
+    }
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="nav">
+			<div class="logo">
+				<a href="../"><img src="../images/logo.png" width="60px" height="60px" alt="logo"></a>
+			</div>
+			<ul class="nav-hd">
+				<li><a href="../">首页</a></li>
+				<li class="stories">
+					<div>二三事</div>
+					<div class="storiesMenu">
+						<a href="./">闲情记趣</a>
+						<a href="#">坎坷记愁</a>
+						<a href="#">浪游记快</a>
+					</div>
+				</li>
+				<li><a href="../atlas">陌上玉</a></li>
+				<li><a href="">与君语</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="title">七夕送啥礼物好呢</div><br>
+		<div class="info">
+			<span class="author">Honye</span>
+			<span class="time">2021.08.13</span>
+		</div>
+		<div class="line"></div>
+		<div class="story">
+      <p>又是一年七夕，不知道送笨汉啥礼物好。</p>
+      <p>看了下日期，居然都和笨蛋3年多了。回想了一下，发现自己也没送过啥礼物。我错惹😭</p>
+      <p>想不到礼物那就写篇日记作为礼物好了😝 那写点啥好呢？</p>
+      <div><img src="../images/R-C.gif" alt="让我想想" /></div>
+      <p>一分钟过去了...</p>
+      <p>两分钟过去了...</p>
+      <p>三分钟过去了...</p>
+      <p>几分钟过去了，我数到几了...</p>
+			<p>不想了，想不到算了（我已经呆看屏幕十几分钟了😫）</p>
+			<p>最后还是要说一句：</p>
+			<div class="barrage-wrapper">
+				<span class="barrage colorful">我爱你!</span>
+			</div>
+      <p>弄完居然花了半个多小时🥺</p><br><br><br><br>
+		</div>
+    <small class="hiding">听说你要嫁给我了 |ω・）</small>
+	</div>
+</body>
+</html>
